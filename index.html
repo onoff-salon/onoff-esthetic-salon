@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+  <html lang="ja">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>エステサロン ON/off(オンとオフ)｜仙台市青葉区</title>
+  <style>
+  :root {
+  --main-color: #b98a7a;
+  --sub-color: #f7f1ee;
+  --text-color: #4a4038;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+color: var(--text-color);
+line-height: 1.8;
+background: #fffdfb;
+}
+header {
+  background: var(--main-color);
+color: #fff;
+padding: 18px 20px;
+text-align: center;
+letter-spacing: 0.1em;
+}
+header h1 { font-size: 1.6rem; font-weight: normal; }
+nav {
+  display: flex;
+justify-content: center;
+gap: 24px;
+background: #fff;
+padding: 10px;
+border-bottom: 1px solid #eee;
+flex-wrap: wrap;
+}
+nav a { color: var(--text-color); text-decoration: none; font-size: 0.9rem; }
+.hero {
+  background: var(--sub-color);
+text-align: center;
+padding: 60px 20px;
+}
+.hero p.lead {
+  font-size: 1.3rem;
+margin-bottom: 12px;
+}
+.hero p.sub {
+font-size: 0.95rem;
+color: #7a6d63;
+}
+section {
+  max-width: 800px;
+margin: 0 auto;
+padding: 50px 20px;
+}
+section h2 {
+  text-align: center;
+font-size: 1.4rem;
+margin-bottom: 30px;
+position: relative;
+}
+section h2::after {
+  content: "";
+display: block;
+width: 40px;
+height: 2px;
+background: var(--main-color);
+margin: 10px auto 0;
+}
+.about p { margin-bottom: 16px; }
+.menu-list {
+  display: grid;
+gap: 16px;
+}
+.menu-item {
+  background: var(--sub-color);
+border-radius: 8px;
+padding: 18px 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 8px;
+}
+.menu-item .name { font-size: 1rem; }
+.menu-item .price { font-size: 1.2rem; color: var(--main-color); font-weight: bold; }
+.info-table {
+  width: 100%;
+border-collapse: collapse;
+}
+.info-table th, .info-table td {
+  text-align: left;
+padding: 10px 8px;
+border-bottom: 1px solid #eee;
+vertical-align: top;
+}
+.info-table th { width: 110px; color: #7a6d63; font-weight: normal; }
+.cta {
+  background: var(--main-color);
+color: #fff;
+text-align: center;
+padding: 50px 20px;
+}
+.cta a.button {
+  display: inline-block;
+margin-top: 16px;
+background: #fff;
+color: var(--main-color);
+padding: 14px 36px;
+border-radius: 30px;
+text-decoration: none;
+font-weight: bold;
+}
+footer {
+  text-align: center;
+padding: 24px;
+font-size: 0.8rem;
+color: #999;
+}
+</style>
+  </head>
+  <body>
+
+  <header>
+  <h1>エステサロン ON/off（オンとオフ）</h1>
+  </header>
+
+  <nav>
+  <a href="#about">サロンについて</a>
+  <a href="#menu">メニュー</a>
+  <a href="#datsumo">脱毛メニュー</a>
+  <a href="#access">アクセス</a>
+  <a href="#booking">ご予約</a>
+  </nav>
+
+  <div class="hero">
+  <p class="lead">丘の上の、静かな隠れ家エステ</p>
+  <p class="sub">仙台市青葉区 国見ケ丘 ｜ ハーブピーリング・脱毛・小顔・美肌</p>
+  </div>
+
+  <section class="about" id="about">
+  <h2>サロンについて</h2>
+  <p>
+  ON/off は、街の喧騒から離れた閑静な住宅街にある、完全予約制のプライベートエステサロンです。
+  まわりの目を気にせず、ゆったりとご自分の時間を過ごしていただけるよう、居心地のよい空間づくりを大切にしています。
+  </p>
+  <p>
+  高額なコースのご案内やしつこい勧誘は行っておらず、すべて都度払いでご利用いただけますので、
+  はじめての方もお仕事帰りや休日に気軽にお立ち寄りいただけます。
+  </p>
+  </section>
+
+  <section class="menu" id="menu">
+  <h2>人気のメニュー</h2>
+  <div class="menu-list">
+  <div class="menu-item">
+  <span class="name">ハーブテント＋光フェイシャル</span>
+  <span class="price">¥11,000</span>
+  </div>
+  <div class="menu-item">
+  <span class="name">ハーブテント＋オイルマッサージ</span>
+  <span class="price">¥8,500</span>
+  </div>
+  <div class="menu-item">
+  <span class="name">韓国式ハーブピーリング</span>
+  <span class="price">¥9,500</span>
+  </div>
+  </div>
+  </section>
+
+  <section class="datsumo" id="datsumo">
+  <h2>脱毛メニュー</h2>
+  <div class="menu-list">
+  <div class="menu-item">
+  <span class="name">全身脱毛（顔・VIO込み）</span>
+  <span class="price">¥22,000</span>
+  </div>
+  <div class="menu-item">
+  <span class="name">全身脱毛（顔・VIOを除く）</span>
+  <span class="price">¥17,000</span>
+  </div>
+  <div class="menu-item">
+  <span class="name">VIO脱毛</span>
+  <span class="price">¥6,500</span>
+  </div>
+  <div class="menu-item">
+  <span class="name">まるっと脚脱毛</span>
+  <span class="price">¥6,000</span>
+  </div>
+  <div class="menu-item">
+  <span class="name">まるっと腕脱毛</span>
+  <span class="price">¥6,000</span>
+  </div>
+  <div class="menu-item">
+  <span class="name">まるっと顔脱毛</span>
+  <span class="price">¥5,000</span>
+  </div>
+  <div class="menu-item">
+  <span class="name">学生脱毛（キッズ可）選べる3パーツ</span>
+  <span class="price">¥5,500</span>
+  </div>
+  </div>
+  </section>
+
+  <section class="access" id="access">
+  <h2>アクセス・営業時間</h2>
+  <table class="info-table">
+  <tr><th>住所</th><td>宮城県仙台市青葉区国見ケ丘５丁目43-51 スカーラヒルズガーデンウィング1217</td></tr>
+  <tr><th>営業時間</th><td>10:00〜（最終受付 19:00）</td></tr>
+  <tr><th>定休日</th><td>なし（不定休）</td></tr>
+  <tr><th>お支払い</th><td>現金／各種クレジットカード／QR決済</td></tr>
+  <tr><th>駐車場</th><td>あり（マンション来客用）</td></tr>
+  </table>
+  </section>
+
+  <div class="cta" id="booking">
+  <p>ご予約・空き状況の確認はこちらから</p>
+  <a class="button" href="https://beauty.hotpepper.jp/kr/slnH000698332/" target="_blank" rel="noopener">ホットペッパービューティーで予約する</a>
+  </div>
+
+  <footer>
+  &copy; 2026 エステサロン ON/off
+  </footer>
+
+  </body>
+  </html>
+  
