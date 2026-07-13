@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://onoff-esthetic-salon.pages.dev/sitemap.xml
