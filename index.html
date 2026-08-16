@@ -6,166 +6,228 @@
 <title>エステサロン ON/off(オンとオフ)｜仙台青葉区 ハーブテント・ハーブピーリング・脱毛・都度払い</title>
 <meta name="description" content="仙台市青葉区 国見ケ丘にある完全予約制のプライベートエステサロン「ON/off」。仙台では珍しい本格ハーブテントや韓国式ハーブピーリング、脱毛(VIO・全身)まで、都度払いで気軽に通える隠れ家サロンです。">
 <meta name="google-site-verification" content="57_8-XT2_E9isaAqmdX3oy89FMEjsD5tYTvaGYqY9tc" />
-  <meta name="google-site-verification" content="NnF0aQKsa2RNP0e5rBLrgH5yIT2uArnAOsrC81oTwaw" />
-  <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"DaySpa","name":"エステサロン ON/off(オンとオフ)","url":"https://onoff-esthetic-salon.pages.dev/","image":"https://onoff-esthetic-salon.pages.dev/salon-room.jpg","telephone":"+81-80-5140-2525","priceRange":"¥¥","address":{"@type":"PostalAddress","streetAddress":"国見ケ丘5丁目43-51","addressLocality":"仙台市青葉区","addressRegion":"宮城県","addressCountry":"JP"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"10:00","closes":"19:00"}}
-  </script>
+<meta name="google-site-verification" content="NnF0aQKsa2RNP0e5rBLrgH5yIT2uArnAOsrC81oTwaw" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"DaySpa","name":"エステサロン ON/off(オンとオフ)","url":"https://onoff-esthetic-salon.pages.dev/","image":"https://onoff-esthetic-salon.pages.dev/salon-room.jpg","telephone":"+81-80-5140-2525","priceRange":"¥¥","address":{"@type":"PostalAddress","streetAddress":"国見ケ丘5丁目43-51","addressLocality":"仙台市青葉区","addressRegion":"宮城県","addressCountry":"JP"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"10:00","closes":"19:00"}}
+</script>
 <style>
-:root {
---main-color: #b98a7a;
---sub-color: #f7f1ee;
---text-color: #4a4038;
+:root{
+--bg:#faf5f0;
+--bg-soft:#f3ece5;
+--ink:#3d332c;
+--ink-soft:#7a6d63;
+--ink-faint:#a89a8d;
+--card:#ffffff;
+--accent:#b98a7a;
+--accent-dark:#9c6f60;
+--accent-soft:#f7ece7;
+--line:#e8ddd0;
+--radius-lg:20px;
+--radius-md:14px;
+--shadow-soft:0 14px 34px rgba(74,58,45,0.10);
+--shadow-card:0 6px 18px rgba(74,58,45,0.07);
 }
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
-color: var(--text-color);
-line-height: 1.8;
-background: #fffdfb;
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+margin:0;
+font-family:"Hiragino Mincho ProN","Yu Mincho",serif;
+background:var(--bg);
+color:var(--ink);
+line-height:1.85;
+-webkit-font-smoothing:antialiased;
 }
-header {
-background: var(--main-color);
-color: #fff;
-padding: 18px 20px;
-text-align: center;
-letter-spacing: 0.1em;
+a{color:inherit; text-decoration:none;}
+img{max-width:100%; display:block;}
+.wrap{max-width:1080px; margin:0 auto; padding:0 24px;}
+section{padding:88px 0;}
+@media (max-width:720px){ section{padding:60px 0;} }
+
+header.topnav{
+position:sticky; top:0; z-index:50;
+background:rgba(250,245,240,0.92);
+backdrop-filter:blur(10px);
+border-bottom:1px solid var(--line);
 }
-header h1 { font-size: 1.6rem; font-weight: normal; }
-header h1 .h1-sub { display: block; margin-top: 6px; font-size: 0.9rem; letter-spacing: 0.05em; }
-nav {
-display: flex;
-justify-content: center;
-gap: 24px;
-background: #fff;
-padding: 10px;
-border-bottom: 1px solid #eee;
-flex-wrap: wrap;
+.nav-row{display:flex; align-items:center; justify-content:space-between; padding:16px 24px; max-width:1080px; margin:0 auto;}
+.brand{display:flex; flex-direction:column; line-height:1.2;}
+.brand-name{font-size:22px; font-weight:700; letter-spacing:0.02em; color:var(--ink);}
+.brand-sub{font-size:10.5px; color:var(--ink-faint); margin-top:3px; letter-spacing:0.12em; font-style:italic; font-family:"Times New Roman",serif;}
+nav.links{display:flex; align-items:center; gap:26px;}
+nav.links a.navlink{font-size:13.5px; color:var(--ink-soft); white-space:nowrap;}
+nav.links a.navlink:hover{color:var(--accent-dark);}
+.btn{display:inline-flex; align-items:center; gap:6px; padding:12px 26px; border-radius:999px;
+font-size:13.5px; font-weight:600; white-space:nowrap; transition:all .2s ease; cursor:pointer; border:1px solid transparent;}
+.btn-accent{background:var(--accent); color:#fff;}
+.btn-accent:hover{background:var(--accent-dark);}
+.btn-outline{background:transparent; color:var(--ink); border:1px solid var(--ink-faint);}
+.btn-outline:hover{border-color:var(--accent); color:var(--accent-dark);}
+.menu-toggle{display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:6px;}
+.menu-toggle span{width:22px; height:1.5px; background:var(--ink);}
+@media (max-width:860px){
+nav.links{position:absolute; top:100%; left:0; right:0; background:var(--bg); flex-direction:column; align-items:flex-start; gap:0; border-bottom:1px solid var(--line); box-shadow:var(--shadow-soft); max-height:0; overflow:hidden; transition:max-height .25s ease;}
+nav.links.open{max-height:520px;}
+nav.links a.navlink{padding:14px 24px; width:100%; border-bottom:1px solid var(--line);}
+nav.links .btn{margin:16px 24px;}
+.menu-toggle{display:flex;}
 }
-nav a { color: var(--text-color); text-decoration: none; font-size: 0.9rem; }
-.hero {
-background: linear-gradient(rgba(255,253,251,0.75), rgba(255,253,251,0.75)), url('salon-room.jpg') center/cover no-repeat;
-text-align: center;
-padding: 60px 20px;
+
+.hero{padding:72px 0 30px;}
+.eyebrow{display:inline-block; font-size:12px; letter-spacing:0.1em; color:var(--accent-dark);
+background:var(--accent-soft); padding:6px 16px; border-radius:999px; margin-bottom:22px;}
+.hero-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;}
+@media (max-width:900px){ .hero-grid{grid-template-columns:1fr;} }
+.hero h1{font-size:38px; font-weight:700; line-height:1.55; margin:0 0 20px; letter-spacing:0.02em;}
+@media (max-width:520px){ .hero h1{font-size:29px;} }
+.hero p.sub{font-size:14.5px; color:var(--ink-soft); margin:0 0 32px;}
+.hero-ctas{display:flex; gap:14px; flex-wrap:wrap;}
+@media (max-width:900px){
+.hero-text{text-align:center;}
+.hero-ctas{justify-content:center;}
+.hero p.sub{margin-left:auto; margin-right:auto;}
 }
-.hero p.lead {
-font-size: 1.3rem;
-margin-bottom: 12px;
-}
-.hero p.sub {
-font-size: 0.95rem;
-color: #7a6d63;
-}
-section {
-max-width: 800px;
-margin: 0 auto;
-padding: 50px 20px;
-}
-section h2 {
-text-align: center;
-font-size: 1.4rem;
-margin-bottom: 30px;
-position: relative;
-}
-section h2::after {
-content: "";
-display: block;
-width: 40px;
-height: 2px;
-background: var(--main-color);
-margin: 10px auto 0;
-}
-.about p { margin-bottom: 16px; }
-.menu-list {
-display: grid;
-gap: 16px;
-}
-.menu-item {
-background: var(--sub-color);
-border-radius: 8px;
-padding: 18px 20px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-wrap: wrap;
-gap: 8px;
-}
-.menu-item .name { font-size: 1rem; }
-.menu-item .price { font-size: 1.2rem; color: var(--main-color); font-weight: bold; }.menu-item .menu-photo { width: 100%; max-height: 280px; object-fit: cover; object-position: center 78%; margin-top: 8px; }.menu-item .menu-photo-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; width: 100%; margin-top: 8px; min-width: 0; }
-.menu-item .menu-photo-gallery .menu-photo { margin-top: 0; min-width: 0; width: 100%; }
-.menu-item.has-photo { background: none; padding: 0; border-radius: 0; display: block; }
-.menu-item.has-photo .menu-item-header { background: var(--sub-color); border-radius: 8px; padding: 18px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
-.menu-item.has-photo .menu-photo-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 12px; }
-.menu-item.has-photo .menu-photo-gallery .menu-photo { width: 100%; height: 280px; object-fit: cover; margin-top: 0; border-radius: 0; }
-.section-banner { width: 100%; max-height: 320px; object-fit: cover; border-radius: 8px; margin-top: 20px; display: block; }
-.info-table {
-width: 100%;
-border-collapse: collapse;
-}
-.info-table th, .info-table td {
-text-align: left;
-padding: 10px 8px;
-border-bottom: 1px solid #eee;
-vertical-align: top;
-}
-.info-table th { width: 110px; color: #7a6d63; font-weight: normal; }
-.voice-list { display: grid; gap: 16px; margin-top: 20px; }
-.voice-item { background: var(--sub-color); border-radius: 8px; padding: 18px 20px; font-size: 0.95rem; position: relative; }
-.voice-item p { margin: 0; }
-.voice-item .voice-name { display: block; margin-top: 10px; font-size: 0.8rem; color: #7a6d63; text-align: right; }
-.faq-list { display: grid; gap: 16px; margin-top: 20px; }
-.faq-item { background: var(--sub-color); border-radius: 8px; padding: 18px 20px; font-size: 0.95rem; }
-.faq-item .q { font-weight: bold; color: var(--main-color); margin-bottom: 8px; }
-.faq-item .a { margin: 0; }
-.feature-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 20px; }
-.feature-item { background: var(--sub-color); border-radius: 8px; padding: 14px 18px; font-size: 0.9rem; text-align: center; }
-.cta {
-background: var(--main-color);
-color: #fff;
-text-align: center;
-padding: 50px 20px;
-}
-.cta a.button {
-display: inline-block;
-margin-top: 16px;
-background: #fff;
-color: var(--main-color);
-padding: 14px 36px;
-border-radius: 30px;
-text-decoration: none;
-font-weight: bold;
-}
-footer {
-text-align: center;
-padding: 24px;
-font-size: 0.8rem;
-color: #999;
-}
+.hero-media img{width:100%; border-radius:var(--radius-lg); box-shadow:var(--shadow-soft); border:1px solid var(--line); object-fit:cover; aspect-ratio:4/5;}
+
+.sec-head{text-align:center; max-width:600px; margin:0 auto 50px;}
+.sec-eyebrow{font-size:11.5px; letter-spacing:0.14em; color:var(--accent-dark); font-weight:700; margin-bottom:10px; text-transform:uppercase; font-family:"Hiragino Kaku Gothic ProN",sans-serif;}
+.sec-title{font-size:25px; font-weight:700; margin:0 0 4px; position:relative; display:inline-block;}
+.sec-title-wrap{text-align:center;}
+.sec-title::after{content:""; display:block; width:36px; height:2px; background:var(--accent); margin:16px auto 0;}
+.sec-desc{font-size:13.5px; color:var(--ink-soft); margin:16px 0 0;}
+
+.reasons-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:26px;}
+@media (max-width:800px){ .reasons-grid{grid-template-columns:1fr;} }
+.reason-card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius-lg);
+padding:34px 26px; text-align:center; box-shadow:var(--shadow-card);}
+.reason-icon{width:58px; height:58px; border-radius:50%; background:var(--accent-soft); border:1px solid var(--line);
+display:flex; align-items:center; justify-content:center; color:var(--accent-dark); margin:0 auto 18px;}
+.reason-icon svg{width:26px; height:26px;}
+.reason-title{font-size:16px; font-weight:700; margin:0 0 10px;}
+.reason-desc{font-size:12.5px; color:var(--ink-soft); margin:0; font-family:"Hiragino Kaku Gothic ProN",sans-serif; line-height:1.8;}
+
+.about p{margin-bottom:18px; font-size:14.5px; color:var(--ink-soft); max-width:760px; margin-left:auto; margin-right:auto;}
+
+.herb-box{background:var(--card); border:1px solid var(--line); border-radius:var(--radius-lg); box-shadow:var(--shadow-card); padding:36px 34px; max-width:800px; margin:0 auto;}
+.herb-box p{margin-bottom:16px; font-size:14.5px; color:var(--ink-soft);}
+.herb-box p:last-child{margin-bottom:0;}
+
+.menu-list{display:grid; gap:16px;}
+.menu-item{background:var(--card); border:1px solid var(--line); border-radius:var(--radius-md); box-shadow:var(--shadow-card);
+padding:20px 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;}
+.menu-item .name{font-size:14.5px;}
+.menu-item .price{font-size:18px; color:var(--accent-dark); font-weight:700;}
+.menu-item.has-photo{background:none; padding:0; border:none; box-shadow:none; display:block; border-radius:var(--radius-md); overflow:hidden;}
+.menu-item.has-photo .menu-item-header{background:var(--card); border:1px solid var(--line); border-radius:var(--radius-md) var(--radius-md) 0 0; padding:20px 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;}
+.menu-item.has-photo .menu-photo-gallery{display:grid; grid-template-columns:1fr 1fr; gap:2px; border:1px solid var(--line); border-top:none; border-radius:0 0 var(--radius-md) var(--radius-md); overflow:hidden;}
+.menu-item.has-photo .menu-photo-gallery .menu-photo{width:100%; height:260px; object-fit:cover; margin-top:0; border-radius:0;}
+.section-banner{width:100%; max-height:320px; object-fit:cover; border-radius:var(--radius-lg); margin-top:24px; display:block; box-shadow:var(--shadow-card); border:1px solid var(--line);}
+
+.feature-list{display:grid; grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)); gap:12px; margin-top:0;}
+.feature-item{background:var(--card); border:1px solid var(--line); border-radius:999px; padding:13px 20px; font-size:13px; text-align:center; color:var(--ink-soft);}
+
+.voice-list{display:grid; grid-template-columns:repeat(2,1fr); gap:18px;}
+@media (max-width:760px){ .voice-list{grid-template-columns:1fr;} }
+.voice-item{background:var(--card); border:1px solid var(--line); border-radius:var(--radius-md); box-shadow:var(--shadow-card); padding:22px 24px; font-size:13.5px; color:var(--ink-soft); position:relative;}
+.voice-item::before{content:"“"; position:absolute; top:6px; left:16px; font-size:32px; color:var(--accent-soft); font-family:Georgia,serif;}
+.voice-item p{margin:0; padding-left:6px;}
+
+.faq-list{max-width:760px; margin:0 auto; display:flex; flex-direction:column; gap:12px;}
+details{background:var(--card); border:1px solid var(--line); border-radius:var(--radius-md); padding:18px 22px; box-shadow:var(--shadow-card);}
+summary{cursor:pointer; font-weight:700; font-size:14px; list-style:none; display:flex; justify-content:space-between; align-items:center; gap:12px; color:var(--ink);}
+summary::-webkit-details-marker{display:none;}
+summary::after{content:"+"; font-size:20px; color:var(--accent-dark); font-weight:400; flex-shrink:0;}
+details[open] summary::after{content:"–";}
+details p{font-size:13px; color:var(--ink-soft); margin:14px 0 0;}
+
+.access-card{max-width:760px; margin:0 auto; background:var(--card); border:1px solid var(--line); border-radius:var(--radius-lg); box-shadow:var(--shadow-card); padding:8px 32px;}
+.info-table{width:100%; border-collapse:collapse;}
+.info-table th, .info-table td{text-align:left; padding:16px 8px; border-bottom:1px solid var(--line); vertical-align:top; font-size:13.5px;}
+.info-table tr:last-child th, .info-table tr:last-child td{border-bottom:none;}
+.info-table th{width:110px; color:var(--ink-faint); font-weight:normal;}
+.info-table td{color:var(--ink-soft);}
+
+.final-cta{background:var(--ink); color:#fff; border-radius:28px; padding:60px 40px; text-align:center;}
+.final-cta p{font-size:14px; color:#d8cfc5; margin:0 0 22px;}
+.final-cta .btn-accent{background:var(--accent); color:#fff;}
+.final-cta .btn-accent:hover{background:var(--accent-dark);}
+
+footer{padding:36px 0 46px; text-align:center; font-size:12px; color:var(--ink-faint);}
+footer a{color:var(--ink-faint); text-decoration:underline;}
 </style>
 </head>
 <body>
 
-<header>
-<h1>エステサロン ON/off(オンとオフ)<br><span class="h1-sub">仙台青葉区 ハーブテント・ハーブピーリング・脱毛・都度払い</span></h1>
+<header class="topnav">
+<div class="nav-row">
+<div class="brand">
+<span class="brand-name">ON/off</span>
+<span class="brand-sub">private esthetic salon</span>
+</div>
+<nav class="links" id="navLinks">
+<a class="navlink" href="#about">サロンについて</a>
+<a class="navlink" href="#herb">ハーブテント</a>
+<a class="navlink" href="#menu">メニュー</a>
+<a class="navlink" href="#datsumo">脱毛メニュー</a>
+<a class="navlink" href="#feature">こだわり</a>
+<a class="navlink" href="#voice">お客様の声</a>
+<a class="navlink" href="#faq">よくある質問</a>
+<a class="navlink" href="#access">アクセス</a>
+<a class="btn btn-accent" href="https://beauty.hotpepper.jp/kr/slnH000698332/" target="_blank" rel="noopener">ご予約</a>
+</nav>
+<button class="menu-toggle" id="menuToggle" aria-label="メニューを開く">
+<span></span><span></span><span></span>
+</button>
+</div>
 </header>
 
-<nav>
-<a href="#about">サロンについて</a>
-  <a href="#herb">ハーブテントとは</a>
-<a href="#menu">メニュー</a>
-<a href="#datsumo">脱毛メニュー</a>
-<a href="#feature">こだわり</a>
-<a href="#faq">よくある質問</a>
-  <a href="#access">アクセス</a>
-<a href="#booking">ご予約</a>
-</nav>
-
-<div class="hero">
-<p class="lead">丘の上の、静かな隠れ家エステ</p>
+<section class="hero">
+<div class="wrap hero-grid">
+<div class="hero-text">
+<span class="eyebrow">完全予約制・プライベートサロン</span>
+<h1>丘の上の、<br>静かな隠れ家エステ</h1>
 <p class="sub">仙台市青葉区 国見ケ丘 ｜ ハーブテント・ハーブピーリング・脱毛・小顔・美肌</p>
+<div class="hero-ctas">
+<a class="btn btn-accent" href="https://beauty.hotpepper.jp/kr/slnH000698332/" target="_blank" rel="noopener">ご予約はこちら →</a>
+<a class="btn btn-outline" href="#about">サロンについて</a>
 </div>
+</div>
+<div class="hero-media">
+<img src="salon-room.jpg" alt="仙台市青葉区のプライベートエステサロンON/offの店内、ハーブテントとベッドのある落ち着いた空間">
+</div>
+</div>
+</section>
 
-<section class="about" id="about">
-<h2>サロンについて</h2>
+<section>
+<div class="wrap">
+<div class="sec-title-wrap" style="margin-bottom:50px;">
+<h2 class="sec-title">ON/offが選ばれる理由</h2>
+</div>
+<div class="reasons-grid">
+<div class="reason-card">
+<div class="reason-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v4M7 21l5-14 5 14M4 21h16"/></svg></div>
+<h3 class="reason-title">本格ハーブテント</h3>
+<p class="reason-desc">数種類の生薬・ハーブを<br>ブレンドした温浴ケア</p>
+</div>
+<div class="reason-card">
+<div class="reason-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5l-8-3Z"/></svg></div>
+<h3 class="reason-title">完全プライベート空間</h3>
+<p class="reason-desc">周りを気にせず、<br>ゆったりとした時間を</p>
+</div>
+<div class="reason-card">
+<div class="reason-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M18 6l-2.5 2.5M8.5 15.5 6 18"/></svg></div>
+<h3 class="reason-title">結果にこだわるケア</h3>
+<p class="reason-desc">お悩みに寄り添い、<br>丁寧にサポートします</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="about" id="about" style="background:var(--bg-soft);">
+<div class="wrap">
+<div class="sec-head">
+<div class="sec-eyebrow">about</div>
+<h2 class="sec-title">サロンについて</h2>
+</div>
 <p>
 ON/off は、街の喧騒から離れた閑静な住宅街にある、完全予約制のプライベートエステサロンです。
 まわりの目を気にせず、ゆったりとご自分の時間を過ごしていただけるよう、居心地のよい空間づくりを大切にしています。
@@ -180,20 +242,33 @@ ON/off は、街の喧騒から離れた閑静な住宅街にある、完全予�
 <p>
 オーナー自身も「人目を気にせず、心地よい時間を過ごしていただきたい」という想いでサロンを営んでおり、コースや商品の高額な勧誘は行わず、すべて都度払いで対応しています。お仕事帰りや休日にも気軽にご予約いただけます。
 </p>
+</div>
 </section>
 
-  <section class="herb" id="herb">
-    <h2>ハーブテントとは｜仙台では数少ない本格ハーブテント</h2>
-  <p>
-    ハーブテントとは、専用のテントの中で数種類の生薬・ハーブをブレンドした蒸気を全身に浴びる、温浴タイプのケアです。香り豊かな蒸気に包まれながら、じんわりと汗をかき、芯から温まる心地よさを感じられる方が多いメニューです。
-  </p>
-    <p>
-      よもぎ蒸しが主に「よもぎ」を使用するのに対し、当店のハーブテントは複数の生薬・ハーブをブレンドしているのが特徴です。仙台市内でも本格的なハーブテントを取り入れているサロンはまだ多くなく、日々の疲れやむくみが気になる方、静かな時間でゆっくり過ごしたい方にお楽しみいただいています。
-    </p>
-  </section>
+<section class="herb" id="herb">
+<div class="wrap">
+<div class="sec-head">
+<div class="sec-eyebrow">herb tent</div>
+<h2 class="sec-title">ハーブテントとは</h2>
+<p class="sec-desc">仙台では数少ない本格ハーブテント</p>
+</div>
+<div class="herb-box">
+<p>
+ハーブテントとは、専用のテントの中で数種類の生薬・ハーブをブレンドした蒸気を全身に浴びる、温浴タイプのケアです。香り豊かな蒸気に包まれながら、じんわりと汗をかき、芯から温まる心地よさを感じられる方が多いメニューです。
+</p>
+<p>
+よもぎ蒸しが主に「よもぎ」を使用するのに対し、当店のハーブテントは複数の生薬・ハーブをブレンドしているのが特徴です。仙台市内でも本格的なハーブテントを取り入れているサロンはまだ多くなく、日々の疲れやむくみが気になる方、静かな時間でゆっくり過ごしたい方にお楽しみいただいています。
+</p>
+</div>
+</div>
+</section>
 
-<section class="menu" id="menu">
-<h2>人気のメニュー</h2>
+<section class="menu" id="menu" style="background:var(--bg-soft);">
+<div class="wrap">
+<div class="sec-head">
+<div class="sec-eyebrow">menu</div>
+<h2 class="sec-title">人気のメニュー</h2>
+</div>
 <div class="menu-list">
 <div class="menu-item">
 <span class="name">ハーブテント＋光フェイシャル</span>
@@ -215,13 +290,18 @@ ON/off は、街の喧騒から離れた閑静な住宅街にある、完全予�
 <span class="price">要お問い合わせ</span>
 </div>
 </div>
+</div>
 </section>
 
 <section class="datsumo" id="datsumo">
-<h2>脱毛メニュー</h2>
-<p>都度払いで気軽に通える全身脱毛・VIO脱毛メニューです。</p>
+<div class="wrap">
+<div class="sec-head">
+<div class="sec-eyebrow">datsumo</div>
+<h2 class="sec-title">脱毛メニュー</h2>
+<p class="sec-desc">都度払いで気軽に通える全身脱毛・VIO脱毛メニューです</p>
+</div>
 <img src="datsumo-banner.jpg" alt="脱毛施術の様子" class="section-banner">
-<div class="menu-list">
+<div class="menu-list" style="margin-top:24px;">
 <div class="menu-item">
 <span class="name">全身脱毛（顔・VIO込み）</span>
 <span class="price">¥22,000</span>
@@ -251,10 +331,15 @@ ON/off は、街の喧騒から離れた閑静な住宅街にある、完全予�
 <span class="price">¥5,500</span>
 </div>
 </div>
+</div>
 </section>
 
-<section class="feature" id="feature">
-<h2>こだわり・サロン設備</h2>
+<section class="feature" id="feature" style="background:var(--bg-soft);">
+<div class="wrap">
+<div class="sec-head">
+<div class="sec-eyebrow">feature</div>
+<h2 class="sec-title">こだわり・サロン設備</h2>
+</div>
 <div class="feature-list">
 <div class="feature-item">完全予約制・貸切利用OK</div>
 <div class="feature-item">女性スタッフ在籍</div>
@@ -266,56 +351,85 @@ ON/off は、街の喧騒から離れた閑静な住宅街にある、完全予�
 <div class="feature-item">体験メニューあり</div>
 <div class="feature-item">ブライダル前メニュー対応</div>
 </div>
+</div>
 </section>
 
-<section class="faq" id="faq">
-<h2>よくある質問</h2>
+<section class="voice" id="voice">
+<div class="wrap">
+<div class="sec-head">
+<div class="sec-eyebrow">voice</div>
+<h2 class="sec-title">お客様の声</h2>
+</div>
+<div class="voice-list">
+<div class="voice-item"><p>ゆらぎ年齢ならではの予測できない不安定な気持ちも、こちらのハーブテントに入ると安定する、というお声をいただいています。また次回もよろしくお願いします、とのことです。</p></div>
+<div class="voice-item"><p>口コミを見て近所だったので伺いました。お店とスタッフの雰囲気が素敵で、技術も丁寧。ざらついていた肌がつるつるになり、毎月自分へのご褒美として通いたいと思えるサロンです。</p></div>
+<div class="voice-item"><p>2週に1回のペースで通っていますが、テントに入った瞬間から汗が出て、毎回体がぽかぽかに。爽快感があり、お肌の調子も良くなってきたので続けたいです。</p></div>
+<div class="voice-item"><p>初めて伺った際、清潔感のある落ち着いた空間にまず安心しました。ハーブテントは思った以上に汗をかき、テントから出た瞬間の爽快感に驚きました。その後のハーブピーリングも心地よい施術で、肌のツヤを実感できました。</p></div>
+<div class="voice-item"><p>回数券や月謝の縛りがないので、自分のペースで無理なく通えると好評をいただいています。「都度払いだから気軽に予約できる」というお声も多くいただきます。</p></div>
+<div class="voice-item"><p>窓からの景色も気持ちが良く、隠れ家のような落ち着いた店内でゆったり過ごせると好評です。</p></div>
+<div class="voice-item"><p>お子様の脱毛の間に、お母様はハーブテントでご自身の時間を楽しまれるなど、ご家族で通っていただくケースも多くあります。</p></div>
+</div>
+</div>
+</section>
+
+<section class="faq" id="faq" style="background:var(--bg-soft);">
+<div class="wrap">
+<div class="sec-head">
+<div class="sec-eyebrow">faq</div>
+<h2 class="sec-title">よくある質問</h2>
+</div>
 <div class="faq-list">
-<div class="faq-item">
-<p class="q">Q. ハーブピーリングは肌への負担が心配です。大丈夫ですか？</p>
-<p class="a">A. 肌の状態やご希望に合わせて、当店のハーブピーリングは、剥離を伴わない優しいタイプのみをご案内しております。肌の状態に合わせて施術しますので、初めての方でも安心してお試しいただけます。</p>
+<details>
+<summary>ハーブピーリングは肌への負担が心配です。大丈夫ですか？</summary>
+<p>肌の状態やご希望に合わせて、当店のハーブピーリングは、剥離を伴わない優しいタイプのみをご案内しております。肌の状態に合わせて施術しますので、初めての方でも安心してお試しいただけます。</p>
+</details>
+<details>
+<summary>施術後にダウンタイムはありますか？</summary>
+<p>韓国式ハーブピーリングでは、肌質により数日程度の赤みや乾燥を感じる場合がありますが、強いダウンタイムを伴う施術ではなく、当日のメイクやお出かけも可能です。</p>
+</details>
+<details>
+<summary>ハーブテントとよもぎ蒸しは何が違うのですか？</summary>
+<p>よもぎ蒸しが主に「よもぎ」を使用するのに対し、当店のハーブテントは複数の生薬・ハーブをブレンドした蒸気でじっくりと全身を温め、発汗を促します。</p>
+</details>
+<details>
+<summary>どのくらいの頻度で通うのがおすすめですか？</summary>
+<p>個人差はありますが、2週間に1回程度のペースで通われるお客様が多くいらっしゃいます。肌やお身体の状態に合わせて無理のないペースでご案内しています。</p>
+</details>
+<details>
+<summary>施術後に好転反応が出ることはありますか？</summary>
+<p>体質によっては施術後に一時的なだるさや軽いほてりが出ることがありますが、通常は数時間〜1日程度で落ち着きます。気になる場合はお気軽にスタッフへご相談ください。</p>
+</details>
+<details>
+<summary>回数券や月謝制ですか？</summary>
+<p>当店は都度払いに加えて、お得な回数券もご用意しています。ご自身のペースやご予算に合わせてお選びいただけます。</p>
+</details>
+<details>
+<summary>仙台市内在住でなくても通えますか？</summary>
+<p>もちろんです。仙台市青葉区国見ケ丘にあり、仙台市内はもちろん宮城県内各地からもお越しいただいております。</p>
+</details>
+<details>
+<summary>ハーブテントは妊娠中でも受けられますか？</summary>
+<p>体調やお身体の状態によりお受けできない場合がございます。ご妊娠中の方やご心配な点がある方は、ご予約前にスタッフまでお気軽にご相談ください。</p>
+</details>
+<details>
+<summary>ハーブテントではどんなハーブを使用していますか？</summary>
+<p>数種類の生薬・ハーブをブレンドしたオリジナルの蒸気を使用しています。詳しい配合内容はサロンでのカウンセリング時にご案内しています。</p>
+</details>
+<details>
+<summary>施術後はどのように過ごすとよいですか？</summary>
+<p>施術後は水分補給をしっかりしていただき、ゆっくりと過ごしていただくことをおすすめしています。</p>
+</details>
 </div>
-<div class="faq-item">
-<p class="q">Q. 施術後にダウンタイムはありますか？</p>
-<p class="a">A. 韓国式ハーブピーリングでは、肌質により数日程度の赤みや乾燥を感じる場合がありますが、強いダウンタイムを伴う施術ではなく、当日のメイクやお出かけも可能です。</p>
-</div>
-<div class="faq-item">
-<p class="q">Q. ハーブテントとよもぎ蒸しは何が違うのですか？</p>
-<p class="a">A. よもぎ蒸しが主に「よもぎ」を使用するのに対し、当店のハーブテントは複数の生薬・ハーブをブレンドした蒸気でじっくりと全身を温め、発汗を促します。</p>
-</div>
-<div class="faq-item">
-<p class="q">Q. どのくらいの頻度で通うのがおすすめですか？</p>
-<p class="a">A. 個人差はありますが、2週間に1回程度のペースで通われるお客様が多くいらっしゃいます。肌やお身体の状態に合わせて無理のないペースでご案内しています。</p>
-</div>
-<div class="faq-item">
-<p class="q">Q. 施術後に好転反応が出ることはありますか？</p>
-<p class="a">A. 体質によっては施術後に一時的なだるさや軽いほてりが出ることがありますが、通常は数時間〜1日程度で落ち着きます。気になる場合はお気軽にスタッフへご相談ください。</p>
-</div>
-<div class="faq-item">
-<p class="q">Q. 回数券や月謝制ですか？</p>
-<p class="a">A. 当店は都度払いに加えて、お得な回数券もご用意しています。ご自身のペースやご予算に合わせてお選びいただけます。</p>
-</div>
-<div class="faq-item">
-<p class="q">Q. 仙台市内在住でなくても通えますか？</p>
-<p class="a">A. もちろんです。仙台市青葉区国見ケ丘にあり、仙台市内はもちろん宮城県内各地からもお越しいただいております。</p>
-</div>
-  <div class="faq-item">
-    <p class="q">Q. ハーブテントは妊娠中でも受けられますか？</p>
-    <p class="a">A. 体調やお身体の状態によりお受けできない場合がございます。ご妊娠中の方やご心配な点がある方は、ご予約前にスタッフまでお気軽にご相談ください。</p>
-  </div>
-  <div class="faq-item">
-    <p class="q">Q. ハーブテントではどんなハーブを使用していますか？</p>
-    <p class="a">A. 数種類の生薬・ハーブをブレンドしたオリジナルの蒸気を使用しています。詳しい配合内容はサロンでのカウンセリング時にご案内しています。</p>
-  </div>
-  <div class="faq-item">
-    <p class="q">Q. 施術後はどのように過ごすとよいですか？</p>
-    <p class="a">A. 施術後は水分補給をしっかりしていただき、ゆっくりと過ごしていただくことをおすすめしています。</p>
-  </div>
 </div>
 </section>
 
 <section class="access" id="access">
-<h2>アクセス・営業時間</h2>
+<div class="wrap">
+<div class="sec-head">
+<div class="sec-eyebrow">access</div>
+<h2 class="sec-title">アクセス・営業時間</h2>
+</div>
+<div class="access-card">
 <table class="info-table">
 <tr><th>住所</th><td>宮城県仙台市青葉区国見ケ丘５丁目43-51</td></tr>
 <tr><th>アクセス</th><td>仙台駅から車で20分／東北福祉大前駅から車で4分／国見ケ丘西バス停から徒歩2分</td></tr>
@@ -324,17 +438,38 @@ ON/off は、街の喧騒から離れた閑静な住宅街にある、完全予�
 <tr><th>お支払い</th><td>現金／Visa・Mastercard・American Express／QR決済</td></tr>
 <tr><th>駐車場</th><td>あり（マンション来客用 6台分）</td></tr>
 </table>
+</div>
+</div>
 </section>
 
-<section class="voice" id="voice"><h2>お客様の声</h2> <div class="voice-list"><div class="voice-item"><p>ゆらぎ年齢ならではの予測できない不安定な気持ちも、こちらのハーブテントに入ると安定する、というお声をいただいています。また次回もよろしくお願いします、とのことです。</p></div><div class="voice-item"><p>口コミを見て近所だったので伺いました。お店とスタッフの雰囲気が素敵で、技術も丁寧。ざらついていた肌がつるつるになり、毎月自分へのご褒美として通いたいと思えるサロンです。</p></div><div class="voice-item"><p>2週に1回のペースで通っていますが、テントに入った瞬間から汗が出て、毎回体がぽかぽかに。爽快感があり、お肌の調子も良くなってきたので続けたいです。</p></div><div class="voice-item"><p>初めて伺った際、清潔感のある落ち着いた空間にまず安心しました。ハーブテントは思った以上に汗をかき、テントから出た瞬間の爽快感に驚きました。その後のハーブピーリングも心地よい施術で、肌のツヤを実感できました。</p></div><div class="voice-item"><p>回数券や月謝の縛りがないので、自分のペースで無理なく通えると好評をいただいています。「都度払いだから気軽に予約できる」というお声も多くいただきます。</p></div><div class="voice-item"><p>窓からの景色も気持ちが良く、隠れ家のような落ち着いた店内でゆったり過ごせると好評です。</p></div><div class="voice-item"><p>お子様の脱毛の間に、お母様はハーブテントでご自身の時間を楽しまれるなど、ご家族で通っていただくケースも多くあります。</p></div></div></section>
-<div class="cta" id="booking">
-<p>ご予約・空き状況の確認はこちらから</p>
-<a class="button" href="https://beauty.hotpepper.jp/kr/slnH000698332/" target="_blank" rel="noopener">ホットペッパービューティーで予約する</a>
+<section id="booking">
+<div class="wrap">
+<div class="final-cta">
+<h2 style="font-size:24px; margin:0 0 14px; font-weight:700;">ご予約・空き状況の確認はこちらから</h2>
+<p>ホットペッパービューティーから簡単にご予約いただけます</p>
+<a class="btn btn-accent" href="https://beauty.hotpepper.jp/kr/slnH000698332/" target="_blank" rel="noopener">ホットペッパービューティーで予約する</a>
 </div>
+</div>
+</section>
 
 <footer>
-&copy; 2026 エステサロン ON/off ｜ <a href="tokushoho.html" style="color:#999;">特定商取引法に基づく表記</a>
+&copy; 2026 エステサロン ON/off ｜ <a href="tokushoho.html">特定商取引法に基づく表記</a>
 </footer>
+
+<script>
+var menuToggle = document.getElementById('menuToggle');
+var navLinks = document.getElementById('navLinks');
+if (menuToggle && navLinks) {
+menuToggle.addEventListener('click', function () {
+navLinks.classList.toggle('open');
+});
+navLinks.querySelectorAll('a').forEach(function (link) {
+link.addEventListener('click', function () {
+navLinks.classList.remove('open');
+});
+});
+}
+</script>
 
 </body>
 </html>
